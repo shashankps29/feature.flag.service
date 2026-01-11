@@ -1,4 +1,4 @@
-# Feature Flag / Configuration Management System
+# Feature Flag System
 
 ## Overview
 This project is a **Feature Flag / Configuration Management System** built using **Java, Spring Boot, Spring Security, and MySQL**.
