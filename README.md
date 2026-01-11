@@ -1,13 +1,13 @@
 # Feature Flag / Configuration Management System
 
-## 📖 Overview
+## Overview
 This project is a **Feature Flag / Configuration Management System** built using **Java, Spring Boot, Spring Security, and MySQL**.
 
 It allows application features to be **enabled or disabled at runtime** using **database-stored configuration**, without changing code or redeploying the application.
 
 ---
 
-## 🎯 Purpose of the Project
+## Purpose of the Project
 In real-world applications, changing feature behavior usually requires:
 - code changes
 - rebuilding the application
@@ -20,7 +20,7 @@ This project solves that problem by:
 
 ---
 
-## 🧩 Core Features
+## Core Features
 - Create feature flags (Admin only)
 - Enable or disable features at runtime
 - Read feature status dynamically
@@ -30,7 +30,7 @@ This project solves that problem by:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Java
 - Spring Boot
 - Spring Data JPA
@@ -40,7 +40,7 @@ This project solves that problem by:
 
 ---
 
-## 🏗️ Application Architecture
+## Application Architecture
 The application follows a **layered backend architecture**, where each layer has a clear responsibility.
 
 ### Controller Layer
@@ -63,7 +63,7 @@ The application follows a **layered backend architecture**, where each layer has
 
 ---
 
-## 🔐 Security Integration
+## Security Integration
 Security is integrated directly into the application architecture using **Spring Security**.
 
 - **Basic Authentication** is used for authentication
@@ -75,25 +75,25 @@ Security is applied at the API layer and kept separate from business logic to ma
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### ➕ Create Feature (ADMIN)
 POST /features?key=NEW_UI&enabled=true
 
-### ✏️ Update Feature (ADMIN)
+### Update Feature (ADMIN)
 PUT /features/NEW_UI?enabled=false
 
 
-### 🔍 Check Feature Status (Public)
+### Check Feature Status (Public)
 GET /features/NEW_UI
 
 
-### ℹ️ Info Endpoint
+### Info Endpoint
 GET /features/info
 
 
 
-## 🔄 Runtime Feature Control
+## Runtime Feature Control
 Feature flags are stored in the database and read **during request processing**.
 
 Example usage in application logic:
